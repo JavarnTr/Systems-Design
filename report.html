@@ -9,14 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="bg-warning">
+<body style="background: rgb(195,31,31); background: linear-gradient(90deg, rgba(195,31,31,1) 0%, rgba(255,196,0,1) 92%);">
 
 <header>
 	<ul class="nav nav-tabs nav-fill">
-		<li class="nav-item">
+		<li class="nav-item col-6">
 		  <a class="nav-link bg-light" href="#">Add Destinations</a>
 		</li>
-		<li class="nav-item">
+		<li class="nav-item col-6">
 		  <a class="nav-link" aria-current="page" href="#">Report Event</a>
 		</li> 		
 	  </ul>	
@@ -28,17 +28,17 @@
 	<div class="container">
 		<div class="col-12">
 			<div class="row mb-3">
-				<label for="inputName1" class="col-sm-2 col-form-label">Enter Destination: </label>
+				<label for="inputLocation" class="col-sm-2 col-form-label">Enter Location: </label>
 				<div class="col-12">
-					<input type="text" class="form-control" id="inputName2" required minlength="3">
+					<input type="text" class="form-control" id="inputLocation" required minlength="3">
 				</div>
 			</div>
 			
 			<fieldset>
 				<div class="row mb-3">
-					<label for="inputName1" class="col-sm-3 col-form-label">Title: </label>
+					<label for="eventSelect" class="col-sm-3 col-form-label">Event Type: </label>
 					<div class="col-sm-9">
-						<select class="form-select" id="specificSizeSelect" required>
+						<select class="form-select" id="eventSelect" required>
 							<option selected>Choose...</option>
 							<option value="1">Road Work</option>
 							<option value="2">Car Accident</option>
@@ -49,22 +49,24 @@
 			</fieldset>
 			
 			<div class="row mb-3">
-				<label for="inputName1" class="col-sm-2 col-form-label">Date: </label>
+				<label for="inputDate" class="col-sm-2 col-form-label">Date: </label>
 				<div class="col-12">
-					<input type="date" class="form-control" id="inputName2" required minlength="3">
+					<input type="date" class="form-control" id="inputDate" required minlength="3">
 				</div>
 			</div>
 			
 			<div class="row mb-3">
-				<label for="inputName1" class="col-sm-2 col-form-label">Time: </label>
+				<label for="inputTime" class="col-sm-2 col-form-label">Time: </label>
 				<div class="col-12">
-					<input type="time" class="form-control" id="inputName2" required minlength="3">
+					<input type="time" class="form-control" id="inputTime" required minlength="3">
 				</div>
 			</div>
+			
+			<button class="col-6" onclick="">Cancel</button>
+			<button class="col-6" onclick="">Submit</button>
 		</div>
 	</div>
 	</form>
-	
 </main>
 </body>
 
