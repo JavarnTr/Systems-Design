@@ -9,12 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<!--<body style="background: rgb(195,31,31); background: linear-gradient(90deg, rgba(195,31,31,1) 0%, rgba(255,196,0,1) 92%);">-->
+<body style="background: rgb(195,31,31); background: linear-gradient(90deg, rgba(195,31,31,1) 0%, rgba(255,196,0,1) 92%);">
 
 <header>
 </header>
 
-<main>	
+<main>
+	<form>
 	<div class="container-fluid text-center" id="hello">
 		<div class="row">
 			<div class="col-12 mt-5">
@@ -22,15 +23,13 @@
 				<h1>Welcome to</h1>
 				<h3>Road Informer</h3>
 			</div>
+
 			
-			
-			
-			
-			<!-- Login box -->
-			<!--
+			<!-- Login box -->			
 			<div class="col-2 col-md-4 col-lg-4">
 			
-			</div>			
+			</div>	
+				
 			<div class="border border-dark col-8 col-md-4 col-lg-4 bg-light p-3 mt-2" id="logIn">			
 				<h4 class="p-3">Log In</h4>
 				<div class="row mb-3">
@@ -47,21 +46,19 @@
 						</div>
 				</div>
 				
-				<button class="m-3" onclick="window.location.href='form.html';">Submit</button>
+				<button type="button" class="m-3" id="loginCancel" onclick="cancelLogin()">Cancel</button>
+				<button type="submit" class="m-3">Submit</button>
 			</div>		
 			<div class="col-2 col-md-4 col-lg-4">
 			
 			</div>
-		</div>
-		-->
-		
-		<!--
-		<div class="row">		
-			
+		</div>		
+	
+		<div class="row">				
 			<div class="col-2 col-md-4 col-lg-4">
 			
 			</div>			
-			
+		
 			<div class="border border-dark col-8 col-md-4 col-lg-4 bg-light p-3 mt-2" id="signUp">			
 				<h4 class="p-3">Sign Up</h4>
 				<div class="row mb-3">
@@ -92,7 +89,8 @@
 						</div>
 				</div>
 				
-				<button id="submitBtn" class="form-control" type="submit" onclick="submitFunc()">Submit</button>
+				<button type="submit" class="m-3" id="loginCancel" onclick="cancelLogin()">Cancel</button>
+				<button id="submitBtn" class="m-3" type="submit" onclick="submitFunc()">Submit</button>
 				
 			</div>	
 				
@@ -100,16 +98,15 @@
 			
 			</div>		
 		</div>	
-		-->
 			
 			<!--Buttons-->
 			<div>
-				<button class="m-3" onclick="openLogin()">Login</button> <br>
-				<button class="m-3" onclick="openSignup()">Sign Up</button>
+				<button type="button" class="m-3" id="openLoginBtn" onclick="openLogin()">Login</button> <br>
+				<button type="button" class="m-3" id="openSigninBtn" onclick="openSignup()">Sign Up</button>
 			</div>					
 	</div>		
 </div>
-
+</form>
 	 	
 
 <script src="javascript.js"></script>
