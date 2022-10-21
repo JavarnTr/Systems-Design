@@ -14,7 +14,7 @@
 <header>
 	<div class="container-fluid text-center">
 		<div class="row">
-			<a href="form.html" class="col-6 p-4 bg-light" style="color: black; text-decoration:none;">Add Destination</a>
+			<a href="form.html" class="col-6 p-4" style="color: black; text-decoration:none; background-color: rgb(173, 170, 170);">Add Destination</a>
 			<a href="report.html" class="col-6 p-4" style="color: black; text-decoration:none;">Report Event</a>
 		</div>
 	</div>
@@ -45,6 +45,37 @@
 					</div>
 				</div>
 			</fieldset>
+
+			<p>Event Severity:</p>
+			<div class="row text-center">
+				<div class="col-lg-4 col-sm-12">
+					<div class="form-check form-check-inline p-3">
+						<label class="form-check-label" for="gridRadios1">
+							Minor
+						</label>
+						<input class="form-check-input bg-success" type="radio" name="gridRadios" id="customerType" value="option1" checked required>										
+					</div>	
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="form-check form-check-inline p-3">
+						<label class="form-check-label" for="gridRadios1">
+							Intermediate
+						</label>
+						<input class="form-check-input bg-warning" type="radio" name="gridRadios" id="customerType" value="option1" checked required>										
+					</div>	
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="form-check form-check-inline p-3">
+						<label class="form-check-label" for="gridRadios1">
+							Extreme
+						</label>
+						<input class="form-check-input bg-danger" type="radio" name="gridRadios" id="customerType" value="option1" checked required>										
+					</div>	
+				</div>
+
+				</div>
+			</div>
+			
 			
 			<div class="row mb-3">
 				<label for="inputDate" class="col-sm-2 col-form-label">Date: </label>
