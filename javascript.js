@@ -66,3 +66,8 @@ function openSignup() {
 
   x.style.display = "none";
 }
+
+function submitAlert() {
+  alert("Your report has been submitted. An employee will manually review it before adding it to the app.");
+}
+
