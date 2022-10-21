@@ -2,4 +2,4 @@
 	color:red;
 }
 
-#nav { z-index: 100; position: absolute; margin: 10px 0px 0px 200px; background-color: #fff; border: 1px #000 Solid; padding: 5px; }
+#nav {position: absolute; bottom:15%; right:1%; padding: 5px; }
