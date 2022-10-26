@@ -4,4 +4,6 @@
 
 #nav {position: absolute; bottom:15%; right:1%; padding: 5px; }
 
+#sidebar {position: absolute; bottom:25%; right:1%; padding: 5px; }
+
 #logout {position: absolute; top:1%; right:1%; padding: 5px; }
